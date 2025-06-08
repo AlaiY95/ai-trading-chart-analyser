@@ -1,3 +1,21 @@
+## Overview and Plans
+
+Architecture Overview
+Data Flow:
+
+User uploads image → ImageUpload component
+Convert to base64 → Send to /api/analyze-chart
+API route calls Claude → Returns analysis
+Display results in AnalysisResult component
+
+Key Design Decisions:
+
+App Router for modern Next.js structure
+TypeScript interfaces for type safety
+Tailwind for quick, responsive styling
+Client-side upload with server-side API processing
+Modular components for easy maintenance
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
